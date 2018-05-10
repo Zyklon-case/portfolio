@@ -19,3 +19,7 @@ class App extends Component {
 }
 
 export default App;
+
+// HOME - jestem twoj stary, linkedin github i tak dalej
+// About - opis o mnie
+// Work - podlinkuje kilka stronek które robiłem
