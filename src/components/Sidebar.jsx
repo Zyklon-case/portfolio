@@ -1,15 +1,15 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Wrapper = styled.div`
+const SidebarWrapper = styled.div`
   grid-row: 1;
   background-color: #0f0f0f;
   padding: 0 10%;
-  margin: 5.5vw 0;
+  margin: 6vh 0 2vh 0;
 `;
 
-const StyledLink = styled(Link)`
+const StyledLink = styled(NavLink)`
   color: #fff;
   opacity: 1;
   text-transform: uppercase;
@@ -59,19 +59,17 @@ const SpanStyle = styled.span`
 `;
 
 const Sidebar = () => {
-  return (
-    <Wrapper>
-      <StyledLink to="">
+  return <SidebarWrapper>
+      <StyledLink to="/" exact strict activeClassName="link-active">
         <SpanStyle>Home</SpanStyle>
       </StyledLink>
-      <StyledLink to="/about">
+      <StyledLink to="/about" exact strict activeClassName="link-active">
         <SpanStyle>About</SpanStyle>
       </StyledLink>
-      <StyledLink to="/Work">
+    <StyledLink to="/work" exact strict activeClassName="link-active">
         <SpanStyle>Work</SpanStyle>
       </StyledLink>
-    </Wrapper>
-  );
+    </SidebarWrapper>;
 };
 
 export default Sidebar;

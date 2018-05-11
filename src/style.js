@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   display: grid;
+  grid-template-rows: 30% auto;
   width: 100%;
   height: 100%;
   background-color: #111;
@@ -17,6 +18,13 @@ export const Title = styled.h1`
 export const Heading = styled.p`
   font-family: "Poppins", sans-serif;
   font-size: 40px;
+  color: #fff;
+  margin: 0 0 50px;
+`;
+
+export const SubHeading = styled.p`
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
   color: #fff;
   margin: 0 0 50px;
 `;

@@ -35,14 +35,35 @@ p {
   font-size: large;
 }
 
-.fade-enter {
+.fadeTranslate-enter {
   opacity: 0;
-  z-index: 1;
+  transform: translate(0, 3vh);
+  position: fixed;
 }
 
-.fade-enter.fade-enter-active {
+.fadeTranslate-enter.fadeTranslate-enter-active {
   opacity: 1;
-  transition: opacity 250ms ease-in;
+  transform: translate(0, 0);
+  transition: opacity 500ms ease-in 500ms, transform 500ms ease-in-out 500ms;
+}
+
+.fadeTranslate-exit {
+  opacity: 1;
+  position: fixed;
+  transform: translate(0, 0);
+}
+
+.fadeTranslate-exit.fadeTranslate-exit-active {
+  opacity: 0;
+  transform: translate(0, 3vh);
+  transition: opacity 300ms ease-in, transform 300ms ease-in-out;
+}
+
+.fix-container {
+  position: fixed;
+}
+.link-active span:after {
+  transform: translate3d(0, 0, 0);
 }
 
 @keyframes App-logo-spin {

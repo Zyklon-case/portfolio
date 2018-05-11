@@ -7,18 +7,25 @@ import './App.css';
 
 
 
-class App extends Component {
-  render() {
-    return (
-      <Wrapper>
+const App =  (props) => {
+    return <Wrapper>
         <Sidebar />
-        <Content />
-      </Wrapper>
-    );
+        <Content keylocation={props.location} />
+      </Wrapper>;
   }
-}
 
 export default App;
+
+// class App extends Component {
+//   render() {
+//     return <Wrapper>
+//       <Sidebar />
+//       <Content keylocation={props.location.pathname} />
+//     </Wrapper>;
+//   }
+// }
+
+// export default App;
 
 // HOME - jestem twoj stary, linkedin github i tak dalej
 // About - opis o mnie
