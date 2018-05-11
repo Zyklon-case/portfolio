@@ -61,6 +61,8 @@ p {
 
 .fix-container {
   position: fixed;
+  width: 80%;
+  margin: 0 auto;
 }
 .link-active span:after {
   transform: translate3d(0, 0, 0);

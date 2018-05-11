@@ -1,17 +1,12 @@
 import React, { Component } from "react";
-import { Heading, SubHeading, NegativeSpan } from "../../style";
+import { Heading, SubHeading, NegativeSpan, TwoColumns } from "../../style";
 import Anchor from "./containers/Anchor";
 import styled from "styled-components";
 
 import picture from "../../profile-pic.jpg";
 
-const Grid = styled.section`
-  display: grid;
-  grid-template-columns: 50% 50%;
-`;
-
 const AboutSection = () => {
-  return <Grid>
+  return <TwoColumns>
       <aside>
         <img src={picture} alt="Łukasz's photo" />
       </aside>
@@ -28,7 +23,7 @@ const AboutSection = () => {
           <br />
         </SubHeading>
         <SubHeading>
-          I have expierence with JavaScript, React, Redux, React Native, PHP, MySQL
+          I have expierence with JavaScript, React, Redux, React Native, Vue, PHP, MySQL
           <br />
         </SubHeading>
         <SubHeading>
@@ -43,7 +38,7 @@ const AboutSection = () => {
           </NegativeSpan>
         </SubHeading>
       </div>
-    </Grid>;
+    </TwoColumns>;
 };
 
 export default AboutSection;

@@ -1,13 +1,13 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Anchor from "./containers/Anchor";
-import { Heading, NegativeSpan } from "../../style";
+import { Heading, NegativeSpan, OneColumn } from "../../style";
 
 
 
 const HomeSection = () => {
   return (
-    <div>
+    <OneColumn>
       <Heading>
         I’m Łukasz Buczkowski,<br />
         a passionate <NegativeSpan>front-end</NegativeSpan> developer<br />
@@ -24,7 +24,7 @@ const HomeSection = () => {
                   Email
               </Anchor>
       </div>
-    </div>
+    </OneColumn>
   );
 };
 
