@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Anchor from "./containers/Anchor";
-import { Heading, NegativeSpan, OneColumn } from "../../style";
+import { OneColumn } from "../../styles/layout.style";
+import { Heading, NegativeSpan } from "../../styles/master.style";
 
 
 
@@ -13,7 +14,7 @@ const HomeSection = () => {
         a passionate <NegativeSpan>front-end</NegativeSpan> developer<br />
               based in <NegativeSpan>Toruń</NegativeSpan>
       </Heading>
-      <div className="about-block__social">
+      <div className="social">
               <Anchor url="https://pl.linkedin.com/in/lbuczkowski">
                 LinkedIn
               </Anchor>

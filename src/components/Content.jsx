@@ -4,32 +4,35 @@ import HomeSection from "./section/HomeSection";
 import AboutSection from "./section/AboutSection";
 import WorkSection from "./section/WorkSection";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import styled from "styled-components";
+import { AnimationWrapper, ContentWrapper } from "../styles/layout.style";
+// import { Heading, NegativeSpan } from "../styles/master.style";
 
-const Wrapper = styled.div`
-  grid-row: 2;
-  padding: 0 10%;
-  margin: 2vh 0;
-`;
+const Content = props => {
+  const locationKey = props.keylocation.pathname;
+  console.log(locationKey);
 
-const Content = (props) => {
-
-  const locationKey = props.keylocation.pathname
-  
-  return <Wrapper>
+  return (
+    <ContentWrapper path={locationKey}>
       <TransitionGroup>
-        <CSSTransition key={locationKey} classNames="fadeTranslate" timeout={1000} mountOnEnter={true} unmountOnExit={true}>
-          <section className="fix-container">
+        <CSSTransition
+          key={locationKey}
+          classNames="fadeTranslate"
+          timeout={1000}
+          mountOnEnter={true}
+          unmountOnExit={true}
+        >
+          <AnimationWrapper>
             <Switch location={props.keylocation}>
               <Route exact path="/" component={HomeSection} />
               <Route exact path="/about" component={AboutSection} />
               <Route exact path="/work" component={WorkSection} />
               <Route render={() => <div>404</div>} />
             </Switch>
-          </section>
+          </AnimationWrapper>
         </CSSTransition>
       </TransitionGroup>
-    </Wrapper>;
+    </ContentWrapper>
+  );
 };
 
 export default Content;

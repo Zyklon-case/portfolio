@@ -1,38 +1,30 @@
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+  /* overflow-y: scroll; */
+}
+body {
+  position: fixed;
+}
+
 #root {
   position: fixed;
   top: 0;
   bottom: 0;
   right: 0;
   left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: #222;
 }
 p {
-  font-family: 'Open Sans', sans-serif;  
+  font-family: "Open Sans", sans-serif;
   font-weight: 600px;
 }
 .App {
   text-align: center;
-  font-family: 'Poppins', sans-serif;  
-  font-family: 'Open Sans', sans-serif;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+  font-family: "Poppins", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .fadeTranslate-enter {
@@ -61,14 +53,23 @@ p {
 
 .fix-container {
   position: fixed;
-  width: 80%;
+  width: 80vw;
   margin: 0 auto;
+  height: 100vh;
+  /* overflow-x: scroll; */
 }
 .link-active span:after {
   transform: translate3d(0, 0, 0);
 }
+.img-responsive {
+  max-width: 100%;
+  height: auto;
+}
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+@media (max-width: 768px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }

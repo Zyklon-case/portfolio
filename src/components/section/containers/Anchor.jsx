@@ -2,18 +2,22 @@ import React from "react";
 import styled from "styled-components";
 
 const Link = styled.a`
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    vertical-align: middle;
-    text-transform: uppercase;
-    color: #fff;
-    font-weight: 700;
-    font-size: 1.1em;
-    margin: 0 40px 0 0;
-    letter-spacing: 2px;
-    cursor: pointer;
-    position: relative;
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  vertical-align: middle;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 700;
+  font-size: 1.1em;
+  margin: 0 40px 0 0;
+  letter-spacing: 2px;
+  cursor: pointer;
+  position: relative;
+  @media (max-width: 768px) {
+    margin: 0;
+  }
 `;
 
 const UnderlineSpan = styled.span`

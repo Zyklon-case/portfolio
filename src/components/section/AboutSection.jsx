@@ -1,14 +1,12 @@
-import React, { Component } from "react";
-import { Heading, SubHeading, NegativeSpan, TwoColumns } from "../../style";
-import Anchor from "./containers/Anchor";
-import styled from "styled-components";
-
+import React from "react";
+import { AboutWrapper } from "../../styles/layout.style";
+import { SubHeading, NegativeSpan } from "../../styles/master.style";
 import picture from "../../profile-pic.jpg";
 
 const AboutSection = () => {
-  return <TwoColumns>
+  return <AboutWrapper>
       <aside>
-        <img src={picture} alt="Łukasz's photo" />
+        <img src={picture} alt="goddamnit eslint" className="img-responsive" />
       </aside>
       <div>
         <SubHeading>
@@ -38,7 +36,7 @@ const AboutSection = () => {
           </NegativeSpan>
         </SubHeading>
       </div>
-    </TwoColumns>;
+    </AboutWrapper>;
 };
 
 export default AboutSection;
