@@ -13,7 +13,7 @@ const Content = props => {
 
   return (
     <ContentWrapper path={locationKey}>
-      <TransitionGroup>
+      <TransitionGroup className="transition-wrapper">
         <CSSTransition
           key={locationKey}
           classNames="fadeTranslate"

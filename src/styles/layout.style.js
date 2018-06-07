@@ -34,6 +34,9 @@ export const ContentWrapper = styled.div`
   align-items: flex-start;
   transition: all 300ms ease-out;
   align-items: center;
+  @media (max-width: 768px) {
+    padding: 0 2.5vw;
+  }
 `;
 export const AnimationWrapper = styled.div`
   position: fixed;
