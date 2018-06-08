@@ -1,8 +1,7 @@
 import React from "react";
 import { WorkWrapper, WorkColumn } from "styles/layout.style";
 import { SubHeading } from "styles/master.style";
-// import Anchor from './containers/Anchor';
-import ListAnchor from "./containers/ListAnchor";
+import ListAnchor from "../containers/ListAnchor";
 
 const WorkSection = () => {
   return (
@@ -39,6 +38,7 @@ const WorkSection = () => {
           <ListAnchor url="http://drimer.eu/">Drimer Toruń</ListAnchor>
         </ul>
       </WorkColumn>
+      {/* <div style={{ "height": "20vh" }}></div> */}
     </WorkWrapper>
   );
 };

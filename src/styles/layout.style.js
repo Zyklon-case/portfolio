@@ -84,5 +84,9 @@ export const WorkColumn = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: ${props => (props.bottom ? "flex-start" : "center")};
+  justify-content: center;
+   @media (max-width: 768px) {
+    justify-content: ${props => (props.bottom ? "flex-start" : "center")};
+  }
+  
 `;

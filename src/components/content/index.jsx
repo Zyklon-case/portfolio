@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import HomeSection from "./section/HomeSection";
-import AboutSection from "./section/AboutSection";
-import WorkSection from "./section/WorkSection";
+import HomeSection from "./section/home/";
+import AboutSection from "./section/about/";
+import WorkSection from "./section/work/";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import { AnimationWrapper, ContentWrapper } from "../../styles/layout.style";
 // import { Heading, NegativeSpan } from "../styles/master.style";

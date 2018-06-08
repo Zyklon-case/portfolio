@@ -35,6 +35,8 @@ const AboutSection = () => {
             lbuczkowski@protonmail.com
           </NegativeSpan>
         </SubHeading>
+      <div style={{"height": "20vh"}}>
+        </div>
       </TextWrapper>
     </AboutWrapper>;
 };
