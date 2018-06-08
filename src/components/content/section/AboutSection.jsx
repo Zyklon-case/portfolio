@@ -1,14 +1,14 @@
 import React from "react";
-import { AboutWrapper } from "../../styles/layout.style";
-import { SubHeading, NegativeSpan } from "../../styles/master.style";
-import picture from "../../profile-pic.jpg";
+import { AboutWrapper, TextWrapper, ImageContainer } from "styles/layout.style";
+import { SubHeading, NegativeSpan } from "styles/master.style";
+import picture from "profile-pic.jpg";
 
 const AboutSection = () => {
   return <AboutWrapper>
-      <aside>
+      <ImageContainer class="image-container">
         <img src={picture} alt="goddamnit eslint" className="img-responsive" />
-      </aside>
-      <div>
+      </ImageContainer>
+      <TextWrapper>
         <SubHeading>
           I'm 24 years old student and full time web developer at <NegativeSpan
           >
@@ -35,7 +35,7 @@ const AboutSection = () => {
             lbuczkowski@protonmail.com
           </NegativeSpan>
         </SubHeading>
-      </div>
+      </TextWrapper>
     </AboutWrapper>;
 };
 

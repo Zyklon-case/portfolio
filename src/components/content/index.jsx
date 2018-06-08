@@ -4,7 +4,7 @@ import HomeSection from "./section/HomeSection";
 import AboutSection from "./section/AboutSection";
 import WorkSection from "./section/WorkSection";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { AnimationWrapper, ContentWrapper } from "../styles/layout.style";
+import { AnimationWrapper, ContentWrapper } from "../../styles/layout.style";
 // import { Heading, NegativeSpan } from "../styles/master.style";
 
 const Content = props => {
@@ -13,7 +13,7 @@ const Content = props => {
 
   return (
     <ContentWrapper path={locationKey}>
-      <TransitionGroup>
+      <TransitionGroup className="transition-wrapper">
         <CSSTransition
           key={locationKey}
           classNames="fadeTranslate"

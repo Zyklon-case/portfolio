@@ -28,6 +28,9 @@ export const NavbarWrapper = styled.div`
 export const ContentWrapper = styled.div`
   grid-row: 2;
   padding: 0 10vw;
+  @media (max-width: 768px) {
+    padding: 0 2.5vw;
+  }
   margin: 2vh 0;
   grid-area: content;
   display: flex;
@@ -37,16 +40,18 @@ export const ContentWrapper = styled.div`
 `;
 export const AnimationWrapper = styled.div`
   position: fixed;
+  display: flex;
   width: 80vw;
   margin: 0 auto;
   height: 100vh;
   @media (max-width: 768px) {
-    width: 90vw;
+    left: 0;
+    width: 100vw;
     overflow-y: scroll;
     position: fixed;
+    justify-content: center;
   }
 `;
-// align - items: ${ props => props.path === "/about" ? 'flex-start' : 'center' }
 export const OneColumn = styled.section`
   align-self: center;
 `;
@@ -61,18 +66,23 @@ export const TwoColumns = styled.section`
 `;
 export const HomeWrapper = OneColumn.extend``;
 
-export const AboutWrapper = TwoColumns.extend`
-  position: relative;
-  top: -30vh;
-`;
+export const AboutWrapper = TwoColumns.extend``;
 
-export const WorkWrapper = TwoColumns.extend`
-  position: relative;
-  top: -10vh;
+export const WorkWrapper = TwoColumns.extend``;
+export const ImageContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+export const TextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 export const WorkColumn = styled.article`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: ${props => (props.bottom ? "flex-start" : "center")};
 `;

@@ -12,7 +12,7 @@ const StyledLink = styled(NavLink)`
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
-  margin: 0 30px 0 0;
+  margin: 0 1rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
   position: relative;

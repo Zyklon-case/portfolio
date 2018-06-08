@@ -1,6 +1,6 @@
 import React from "react";
-import { WorkWrapper, WorkColumn } from "../../styles/layout.style";
-import { SubHeading } from "../../styles/master.style";
+import { WorkWrapper, WorkColumn } from "styles/layout.style";
+import { SubHeading } from "styles/master.style";
 // import Anchor from './containers/Anchor';
 import ListAnchor from "./containers/ListAnchor";
 
@@ -23,7 +23,7 @@ const WorkSection = () => {
           </ListAnchor>
         </ul>
       </WorkColumn>
-      <WorkColumn>
+      <WorkColumn bottom>
         <SubHeading>i&#39;ve built websites with WordPress including:</SubHeading>
         <ul>
           <ListAnchor url="http://kj.edu.pl/">

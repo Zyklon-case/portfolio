@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import Anchor from "./containers/Anchor";
-import { OneColumn } from "../../styles/layout.style";
-import { Heading, NegativeSpan } from "../../styles/master.style";
+import { OneColumn } from "styles/layout.style";
+import { Heading, NegativeSpan } from "styles/master.style";
 
 
 
