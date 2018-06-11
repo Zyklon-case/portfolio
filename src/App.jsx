@@ -2,8 +2,21 @@ import React, { Component } from "react";
 import reset from "reset-css";
 import Sidebar from "./components/Sidebar";
 import Content from "./components/content/";
-import { Wrapper } from "./styles/layout.style";
+import styled from "styled-components";
 import "./App.css";
+
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-areas:
+    "header"
+    "content";
+  grid-template-rows: 10% auto;
+  grip-gap: 1em;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  color: #fff;
+`;
 
 const App = props => {
   return (

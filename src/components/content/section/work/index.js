@@ -1,7 +1,35 @@
 import React from "react";
-import { WorkWrapper, WorkColumn } from "styles/layout.style";
+import styled from "styled-components";
+import { TwoColumns } from "styles/layout.style";
 import { SubHeading } from "styles/master.style";
 import ListAnchor from "../containers/ListAnchor";
+
+const WorkColumn = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width:768px) { 
+    margin: 2vh 0;
+  }
+`;
+
+const WorkWrapper = TwoColumns.extend`
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  @media (max-width: 768px) {
+    margin-left: -7px;
+    width: 100vw;
+    overflow-y: scroll;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+  }
+`;
 
 const WorkSection = () => {
   return (
@@ -38,9 +66,9 @@ const WorkSection = () => {
           <ListAnchor url="http://drimer.eu/">Drimer Toruń</ListAnchor>
         </ul>
       </WorkColumn>
-      {/* <div style={{ "height": "20vh" }}></div> */}
     </WorkWrapper>
   );
 };
 
 export default WorkSection;
+

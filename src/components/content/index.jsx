@@ -4,8 +4,26 @@ import HomeSection from "./section/home/";
 import AboutSection from "./section/about/";
 import WorkSection from "./section/work/";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-import { AnimationWrapper, ContentWrapper } from "../../styles/layout.style";
-// import { Heading, NegativeSpan } from "../styles/master.style";
+import styled from "styled-components";
+// import { AnimationWrapper, ContentWrapper } from "../../styles/layout.style";
+
+const ContentWrapper = styled.div`
+  grid-row: 2;
+  padding: 0 10vw;
+  @media (max-width: 768px) {
+    padding: 0 2.5vw;
+  }
+  margin: 2vh 0;
+  grid-area: content;
+  display: flex;
+  align-items: flex-start;
+  transition: all 300ms ease-out;
+  align-items: center;
+`;
+const AnimationWrapper = styled.div`
+  height: 100%;
+  width: 100%;
+`;
 
 const Content = props => {
   const locationKey = props.keylocation.pathname;
