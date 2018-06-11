@@ -1,8 +1,35 @@
 import React from "react";
-import { WorkWrapper, WorkColumn } from "../../styles/layout.style";
-import { SubHeading } from "../../styles/master.style";
-// import Anchor from './containers/Anchor';
-import ListAnchor from "./containers/ListAnchor";
+import styled from "styled-components";
+import { TwoColumns } from "styles/layout.style";
+import { SubHeading } from "styles/master.style";
+import ListAnchor from "../containers/ListAnchor";
+
+const WorkColumn = styled.article`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media (max-width:768px) { 
+    margin: 2vh 0;
+  }
+`;
+
+const WorkWrapper = TwoColumns.extend`
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  @media (max-width: 768px) {
+    margin-left: -7px;
+    width: 100vw;
+    overflow-y: scroll;
+    position: fixed;
+    justify-content: center;
+    flex-direction: column;
+  }
+`;
 
 const WorkSection = () => {
   return (
@@ -23,7 +50,7 @@ const WorkSection = () => {
           </ListAnchor>
         </ul>
       </WorkColumn>
-      <WorkColumn>
+      <WorkColumn bottom>
         <SubHeading>i&#39;ve built websites with WordPress including:</SubHeading>
         <ul>
           <ListAnchor url="http://kj.edu.pl/">
@@ -44,3 +71,4 @@ const WorkSection = () => {
 };
 
 export default WorkSection;
+

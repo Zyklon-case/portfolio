@@ -1,5 +1,6 @@
 import styled from "styled-components";
 
+<<<<<<< HEAD
 export const Wrapper = styled.div`
   display: grid;
   grid-template-areas:
@@ -50,6 +51,8 @@ export const AnimationWrapper = styled.div`
   }
 `;
 // align - items: ${ props => props.path === "/about" ? 'flex-start' : 'center' }
+=======
+>>>>>>> df1cf5481ecd5b0f4df4b4831181a06b37e5508c
 export const OneColumn = styled.section`
   align-self: center;
 `;
@@ -60,22 +63,8 @@ export const TwoColumns = styled.section`
   grid-gap: 1em;
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
+    column-count: 1;
   }
 `;
-export const HomeWrapper = OneColumn.extend``;
 
-export const AboutWrapper = TwoColumns.extend`
-  position: relative;
-  top: -30vh;
-`;
 
-export const WorkWrapper = TwoColumns.extend`
-  position: relative;
-  top: -10vh;
-`;
-
-export const WorkColumn = styled.article`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-`;

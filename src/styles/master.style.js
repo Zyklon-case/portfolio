@@ -11,15 +11,21 @@ export const Heading = styled.p`
     text-align: center;
   }
   @media (max-width: 480px) {
-    font-size: 1.4em;
+    font-size: 1.6em;
   }
 `;
 
 export const SubHeading = styled.p`
   font-family: "Poppins", sans-serif;
-  font-size: 24px;
+  font-size: 1.4rem;
+  line-height: 1.5em;
   color: #fff;
-  margin: 0 0 50px;
+  margin: 0 0 1rem;
+  padding: 0 1rem;
+   @media (max-width: 768px) {
+    font-size: 1.2rem;
+    text-align: center;
+  }
 `;
 
 export const SpanStyle = styled.span`

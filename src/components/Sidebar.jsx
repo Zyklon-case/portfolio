@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { NavbarWrapper } from "../styles/layout.style";
 import { SpanStyle } from "../styles/master.style";
 
 const StyledLink = styled(NavLink)`
@@ -12,12 +11,24 @@ const StyledLink = styled(NavLink)`
   font-weight: 400;
   font-size: 14px;
   letter-spacing: 1px;
-  margin: 0 30px 0 0;
+  margin: 0 1rem;
   transition: 0.3s ease-in-out;
   cursor: pointer;
   position: relative;
   display: inline-block;
   text-decoration: none;
+`;
+
+const NavbarWrapper = styled.div`
+  grid-row: 1;
+  background-color: #0f0f0f;
+  padding: 0 10%;
+  margin: 6vh 0 2vh 0;
+  grid-area: header;
+  @media (max-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 `;
 
 const Sidebar = () => {
