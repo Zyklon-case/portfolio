@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import styled from "styled-components";
+import React from "react";
 import Anchor from "../containers/Anchor";
 import { OneColumn } from "styles/layout.style";
 import { Heading, NegativeSpan } from "styles/master.style";
@@ -14,8 +13,7 @@ export const HomeWrapper = OneColumn.extend`
   align-items: flex-start;
   height: 100vh;
   @media (max-width: 768px) {
-    width: 100vw;
-    overflow-y: scroll;
+    width: 95vw;
     position: fixed;
     justify-content: center;
   }

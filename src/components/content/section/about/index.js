@@ -13,7 +13,7 @@ const AboutWrapper = TwoColumns.extend`
   transition: left 0.5s linear;
   @media (max-width: 768px) {
     overflow-y: scroll;
-    margin-left: -7px;
+    margin-left: -15px;
     width: 100vw;
     justify-content: center;
   }

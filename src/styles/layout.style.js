@@ -1,58 +1,5 @@
 import styled from "styled-components";
 
-<<<<<<< HEAD
-export const Wrapper = styled.div`
-  display: grid;
-  grid-template-areas:
-    "header"
-    "content";
-  grid-template-rows: 10% auto;
-  grip-gap: 1em;
-  width: 100%;
-  height: 100%;
-  background-color: #111;
-  color: #fff;
-`;
-
-export const NavbarWrapper = styled.div`
-  grid-row: 1;
-  background-color: #0f0f0f;
-  padding: 0 10%;
-  margin: 6vh 0 2vh 0;
-  grid-area: header;
-  @media (max-width: 768px) {
-    display: flex;
-    justify-content: center;
-  }
-`;
-
-export const ContentWrapper = styled.div`
-  grid-row: 2;
-  padding: 0 10vw;
-  margin: 2vh 0;
-  grid-area: content;
-  display: flex;
-  align-items: flex-start;
-  transition: all 300ms ease-out;
-  align-items: center;
-  @media (max-width: 768px) {
-    padding: 0 2.5vw;
-  }
-`;
-export const AnimationWrapper = styled.div`
-  position: fixed;
-  width: 80vw;
-  margin: 0 auto;
-  height: 100vh;
-  @media (max-width: 768px) {
-    width: 90vw;
-    overflow-y: scroll;
-    position: fixed;
-  }
-`;
-// align - items: ${ props => props.path === "/about" ? 'flex-start' : 'center' }
-=======
->>>>>>> df1cf5481ecd5b0f4df4b4831181a06b37e5508c
 export const OneColumn = styled.section`
   align-self: center;
 `;

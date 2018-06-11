@@ -22,8 +22,7 @@ const WorkWrapper = TwoColumns.extend`
   height: 80vh;
   width: 80vw;
   @media (max-width: 768px) {
-    margin-left: -7px;
-    width: 100vw;
+    width: 95vw;
     overflow-y: scroll;
     position: fixed;
     justify-content: center;
@@ -53,17 +52,17 @@ const WorkSection = () => {
       <WorkColumn bottom>
         <SubHeading>i&#39;ve built websites with WordPress including:</SubHeading>
         <ul>
-          <ListAnchor url="http://kj.edu.pl/">
-            Kollegium Jagiellońskie
-          </ListAnchor>
+          <ListAnchor url="http://melar-meble.eu/">Melar Meble</ListAnchor>
+          <ListAnchor url="https://wiki.dataspace.pl/">Data Space Wiki</ListAnchor>
           <ListAnchor url="http://www.cubeofficepark.pl/">
             Cube Office Park
           </ListAnchor>
-          <ListAnchor url="http://melar-meble.eu/">Melar Meble</ListAnchor>
+          <ListAnchor url="http://kj.edu.pl/">
+            Kollegium Jagiellońskie
+          </ListAnchor>
           <ListAnchor url="http://brzozowezacisze.fasterm.pl/">
             Osiedle Brzozowe Zacisze
           </ListAnchor>
-          <ListAnchor url="http://drimer.eu/">Drimer Toruń</ListAnchor>
         </ul>
       </WorkColumn>
     </WorkWrapper>
