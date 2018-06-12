@@ -1,11 +1,11 @@
 import React from "react";
 import { Switch, Route } from "react-router-dom";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import styled from "styled-components";
+
 import HomePage from "screens/Home/Page";
 import AboutPage from "screens/About/Page";
 import WorkPage from "screens/Work/Page";
-import { TransitionGroup, CSSTransition } from "react-transition-group";
-import styled from "styled-components";
-// import { AnimationWrapper, ContentWrapper } from "../../styles/layout.style";
 
 const ContentWrapper = styled.div`
   grid-row: 2;
@@ -16,7 +16,6 @@ const ContentWrapper = styled.div`
   margin: 2vh 0;
   grid-area: content;
   display: flex;
-  align-items: flex-start;
   transition: all 300ms ease-out;
   align-items: center;
 `;
@@ -25,10 +24,8 @@ const AnimationWrapper = styled.div`
   width: 100%;
 `;
 
-const Content = props => {
+const RootScreens = props => {
   const locationKey = props.keylocation.pathname;
-  console.log(locationKey);
-
   return (
     <ContentWrapper path={locationKey}>
       <TransitionGroup className="transition-wrapper">
@@ -53,4 +50,4 @@ const Content = props => {
   );
 };
 
-export default Content;
+export default RootScreens;

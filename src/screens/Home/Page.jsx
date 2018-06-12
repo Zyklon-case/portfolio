@@ -1,9 +1,9 @@
 import React from "react";
 import Anchor from "components/UI/Anchor";
-import { OneColumn } from "styles/layout.style";
-import { Heading, NegativeSpan } from "styles/master.style";
+import styled from "styled-components";
+import { OneColumn, NegativeSpan } from "styles/";
 
-export const HomeWrapper = OneColumn.extend`
+const HomeWrapper = OneColumn.extend`
   position: fixed;
   display: flex;
   flex-direction: column;
@@ -14,9 +14,29 @@ export const HomeWrapper = OneColumn.extend`
   height: 100vh;
   @media (max-width: 768px) {
     width: 95vw;
-    position: fixed;
-    justify-content: center;
   }
+`;
+
+const Heading = styled.p`
+  font-family: "Poppins", sans-serif;
+  font-size: 2.2em;
+  line-height: 1.1em;
+  color: #fff;
+  margin: 0 0 50px;
+  @media (max-width: 768px) {
+    font-size: 1.8em;
+    text-align: center;
+  }
+  @media (max-width: 480px) {
+    font-size: 1.6em;
+  }
+`;
+const Social = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 `;
 
 const HomePage = () => {
@@ -27,11 +47,11 @@ const HomePage = () => {
         a passionate <NegativeSpan>front-end</NegativeSpan> developer<br />
         based in <NegativeSpan>Toruń</NegativeSpan>
       </Heading>
-      <div className="social">
+      <Social>
         <Anchor url="https://pl.linkedin.com/in/lbuczkowski">LinkedIn</Anchor>
         <Anchor url="https://github.com/Zyklon-case">Github</Anchor>
         <Anchor url="mailto:lbuczkowski@protonmail.com">Email</Anchor>
-      </div>
+      </Social>
     </HomeWrapper>
   );
 };

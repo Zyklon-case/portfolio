@@ -1,6 +1,7 @@
-@import '../node_modules/reset-css';
+@import "../node_modules/reset-css";
 
-body, html {
+body,
+html {
   height: 100%;
   overflow-x: hidden;
 }
@@ -8,7 +9,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-    position: fixed;
+  position: fixed;
 }
 #root {
   position: fixed;
@@ -25,7 +26,6 @@ p {
 }
 .App {
   text-align: center;
-  font-family: "Poppins", sans-serif;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -70,16 +70,6 @@ p {
   max-width: 100%;
   height: auto;
   align-self: center;
-}
-
-@media (max-width: 768px) {
-  .social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-  }
 }
 
 .transition-wrapper {

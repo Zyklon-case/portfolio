@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { TwoColumns } from "styles/layout.style";
-import { SubHeading, NegativeSpan } from "styles/master.style";
+import { TwoColumns, SubHeading, NegativeSpan } from "styles/";
 import picture from "profile-pic.jpg";
 
 const AboutWrapper = TwoColumns.extend`
@@ -13,9 +12,7 @@ const AboutWrapper = TwoColumns.extend`
   transition: left 0.5s linear;
   @media (max-width: 768px) {
     overflow-y: scroll;
-    margin-left: -15px;
-    width: 100vw;
-    justify-content: center;
+    width: 95vw;
   }
 `;
 

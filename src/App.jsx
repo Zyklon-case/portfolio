@@ -1,6 +1,6 @@
 import React from "react";
 import Sidebar from "./components/UI/Sidebar";
-import Content from "screens/Root";
+import RootScreens from "screens/Root";
 import styled from "styled-components";
 import "./App.css";
 
@@ -21,10 +21,9 @@ const App = props => {
   return (
     <Wrapper>
       <Sidebar />
-      <Content keylocation={props.location} />
+      <RootScreens keylocation={props.location} />
     </Wrapper>
   );
 };
 
 export default App;
-
