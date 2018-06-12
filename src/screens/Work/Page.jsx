@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { TwoColumns } from "styles/layout.style";
 import { SubHeading } from "styles/master.style";
-import ListAnchor from "../containers/ListAnchor";
+import ListAnchor from "components/UI/ListAnchor";
 
 const WorkColumn = styled.article`
   display: flex;
@@ -30,7 +30,7 @@ const WorkWrapper = TwoColumns.extend`
   }
 `;
 
-const WorkSection = () => {
+const WorkPage = () => {
   return (
     <WorkWrapper>
       <WorkColumn>
@@ -69,5 +69,5 @@ const WorkSection = () => {
   );
 };
 
-export default WorkSection;
+export default WorkPage;
 

@@ -26,7 +26,7 @@ const Column = styled.div`
   justify-content: center;
 `;
 
-const AboutSection = () => {
+const AboutPage = () => {
   return (
     <AboutWrapper>
       <Column class="image-container">
@@ -63,4 +63,4 @@ const AboutSection = () => {
   );
 };
 
-export default AboutSection;
+export default AboutPage;

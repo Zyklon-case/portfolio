@@ -1,7 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { SpanStyle } from "../styles/master.style";
+import { SpanStyle } from "styles/master.style";
 
 const StyledLink = styled(NavLink)`
   color: #fff;

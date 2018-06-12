@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import reset from "reset-css";
-import Sidebar from "./components/Sidebar";
-import Content from "./components/content/";
+import Sidebar from "./components/UI/Sidebar";
+import Content from "screens/Root";
 import styled from "styled-components";
 import "./App.css";
 

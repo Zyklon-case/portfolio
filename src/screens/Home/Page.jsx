@@ -1,5 +1,5 @@
 import React from "react";
-import Anchor from "../containers/Anchor";
+import Anchor from "components/UI/Anchor";
 import { OneColumn } from "styles/layout.style";
 import { Heading, NegativeSpan } from "styles/master.style";
 
@@ -19,7 +19,7 @@ export const HomeWrapper = OneColumn.extend`
   }
 `;
 
-const HomeSection = () => {
+const HomePage = () => {
   return (
     <HomeWrapper>
       <Heading>
@@ -36,12 +36,4 @@ const HomeSection = () => {
   );
 };
 
-export default HomeSection;
-
-// @media(max - width: 768px) {
-//   left: 0;
-//   width: 100vw;
-//   overflow - y: scroll;
-//   position: fixed;
-//   justify - content: center;
-// }
+export default HomePage;

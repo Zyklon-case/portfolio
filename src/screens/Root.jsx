@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Switch, Route } from "react-router-dom";
-import HomeSection from "./section/home/";
-import AboutSection from "./section/about/";
-import WorkSection from "./section/work/";
+import HomePage from "screens/Home/Page";
+import AboutPage from "screens/About/Page";
+import WorkPage from "screens/Work/Page";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import styled from "styled-components";
 // import { AnimationWrapper, ContentWrapper } from "../../styles/layout.style";
@@ -41,9 +41,9 @@ const Content = props => {
         >
           <AnimationWrapper>
             <Switch location={props.keylocation}>
-              <Route exact path="/" component={HomeSection} />
-              <Route exact path="/about" component={AboutSection} />
-              <Route exact path="/work" component={WorkSection} />
+              <Route exact path="/" component={HomePage} />
+              <Route exact path="/about" component={AboutPage} />
+              <Route exact path="/work" component={WorkPage} />
               <Route render={() => <div>404</div>} />
             </Switch>
           </AnimationWrapper>
