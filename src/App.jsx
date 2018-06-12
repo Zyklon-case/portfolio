@@ -1,5 +1,4 @@
-import React, { Component } from "react";
-import reset from "reset-css";
+import React from "react";
 import Sidebar from "./components/UI/Sidebar";
 import Content from "screens/Root";
 import styled from "styled-components";
