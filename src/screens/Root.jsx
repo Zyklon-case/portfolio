@@ -6,6 +6,7 @@ import styled from "styled-components";
 import HomePage from "screens/Home/Page";
 import AboutPage from "screens/About/Page";
 import WorkPage from "screens/Work/Page";
+import NotFoundPage from "screens/404/Page";
 
 const ContentWrapper = styled.div`
   grid-row: 2;
@@ -41,7 +42,7 @@ const RootScreens = props => {
               <Route exact path="/" component={HomePage} />
               <Route exact path="/about" component={AboutPage} />
               <Route exact path="/work" component={WorkPage} />
-              <Route render={() => <div>404</div>} />
+              <Route render={() => <NotFoundPage />} />
             </Switch>
           </AnimationWrapper>
         </CSSTransition>
