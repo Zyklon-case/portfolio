@@ -42,17 +42,17 @@ const AboutPage = () => {
         </SubHeading>
         <SubHeading>
           I have expierence with JavaScript, React, Redux, React Native, Vue,
-          PHP, MySQL
+          PHP, Wordpress and MySQL
           <br />
         </SubHeading>
         <SubHeading>
-          I’m looking for a job involving <NegativeSpan>React</NegativeSpan>{" "}
+          I’m looking for a job opportunity involving <NegativeSpan>React</NegativeSpan>{" "}
           and/or modern front-end technologies
           <br />
           around Toruń, Bydgoszcz, Gdańsk or remote<br />
         </SubHeading>
         <SubHeading>
-          If you're intrested don't hesitate and contact me via e-mail{" "}
+          If you're interested don't hesitate and contact me via e-mail{" "}
           <NegativeSpan>lbuczkowski@protonmail.com</NegativeSpan>
         </SubHeading>
       </Column>

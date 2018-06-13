@@ -10,6 +10,7 @@ const WorkColumn = styled.article`
   justify-content: center;
   @media (max-width: 768px) {
     margin: 2vh 0;
+    min-width: 90%;
   }
 `;
 
@@ -27,13 +28,20 @@ const WorkWrapper = TwoColumns.extend`
     flex-direction: column;
   }
 `;
+const List = styled.ul`
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
 const WorkPage = () => {
   return (
     <WorkWrapper>
       <WorkColumn>
         <SubHeading>i&#39;ve built modern Web Applications for:</SubHeading>
-        <ul>
+        <List>
           <ListAnchor url="https://dataspace.pl/">Data Space</ListAnchor>
           <ListAnchor url="http://www.datainvest.pl/pl/">
             Data Invest
@@ -45,13 +53,13 @@ const WorkPage = () => {
           <ListAnchor url="http://www.deweloperzytorun.pl/">
             Deweloperzy Toruń
           </ListAnchor>
-        </ul>
+        </List>
       </WorkColumn>
       <WorkColumn bottom>
         <SubHeading>
           i&#39;ve built websites with WordPress including:
         </SubHeading>
-        <ul>
+        <List>
           <ListAnchor url="http://melar-meble.eu/">Melar Meble</ListAnchor>
           <ListAnchor url="https://wiki.dataspace.pl/">
             Data Space Wiki
@@ -65,7 +73,7 @@ const WorkPage = () => {
           <ListAnchor url="http://kj.edu.pl/">
             Kollegium Jagiellońskie
           </ListAnchor>
-        </ul>
+        </List>
       </WorkColumn>
     </WorkWrapper>
   );

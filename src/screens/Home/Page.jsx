@@ -32,11 +32,13 @@ const Heading = styled.p`
   }
 `;
 const Social = styled.div`
+@media (max-width: 768px) {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
+}
 `;
 
 const HomePage = () => {
